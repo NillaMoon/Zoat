@@ -13,5 +13,17 @@
     "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
     "project-setup": "node ./scripts/projectSetup.js",
     "theme-setup": "node ./scripts/themeSetup.js"
+  },
+  "dependencies": {
+    "@tinacms/datalayer": "^1.4.0",
+    "next-auth": "^4.24.11",
+    "tinacms": "^2.8.0",
+    "tinacms-authjs": "^11.0.0",
+    "tinacms-gitprovider-github": "^3.0.0",
+    "upstash-redis-level": "^1.1.1"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.10.0",
+    "@types/node": "^24.0.12"
   }
 }
